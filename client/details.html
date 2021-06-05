@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <!-- Links -->
+    <link rel="stylesheet" href="styles/details.css" />
+    <link rel="stylesheet" href="styles/haineData.css" />
+    <link rel="stylesheet" href="styles/vue-material.css" />
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+    <title>Details Product</title>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand a" href="index.html">
+            <img src="storefront.ico" width="30" height="30" class="d-inline-block align-top" alt=""> Magazin Online Haine
+        </a>
+    </nav>
+   
+    <div id="details">
+        <h1 style="color:ghostwhite;">Detalii pentru produsul cu id-ul: {{ id }}</h1>
+
+        <div class="custom"></div>
+
+        <table style="animation-fill-mode:forwards; ">
+
+            <div class="label">Name:</div>
+            <div class="value">{{haina.name}}</div>
+            <div class="label">Price:</div>
+            <div class="value">{{haina.price}}</div>
+            <div class="label">Brand:</div>
+            <div class="value">{{haina.brand}}</div>
+            <div class="label">Color:</div>
+            <div class="value">{{haina.color}}</div>
+            <div class="label">Season:</div>
+            <div class="value">{{haina.season}}</div>
+            <div class="label">Material:</div>
+            <div class="value">{{haina.material}}</div>
+            <div class="label">Flamable:</div>
+            <div class="value">{{haina.flamable}}</div>
+            <div class="label">Cloth info:</div>
+            <div class="value">{{haina.info}}</div>
+            <div class="label">Cloth season:</div>
+            <div class="value">{{haina.sezon_aparitie}}</div>
+        </table>
+    </div>
+
+    <script src="src/details.js"></script>
+</body>
+
+</html>

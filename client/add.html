@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <!-- Links -->
+    <link rel="stylesheet" href="styles/vue-material.css" />
+    <link rel="stylesheet" href="styles/haineData.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+
+
+    <!-- Meta -->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Scripts -->
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/vue-material.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+    <script type="text/javascript" src="src/customers-service.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand a" href="index.html">
+            <img src="storefront.ico" width="30" height="30" class="d-inline-block align-top" alt=""> Magazin Online Haine
+        </a>
+    </nav>
+
+   
+
+    <div id="addH">
+        <div class="title"> Adaugare pereche ochelari noi: </div>
+        <label>Cloth name</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label class="d-inline-block">Cloth brand</label>
+        <input type="text" id="brand" name="brand"><br><br>
+
+        <label>Cloth color</label>
+        <input type="text" id="color" name="color"><br><br>
+
+        <label>Season</label>
+        <input type="text" id="season" name="season"><br><br>
+
+        <label>Material </label>
+        <input type="text" id="material" name="material"><br><br>
+
+        <label>Flamable (Yes/No)</label>
+        <input type="text" id="flamable" name="flamable"><br><br>
+
+        <label>Cloth info</label>
+        <input type="text" id="info" name="info"><br><br>
+
+        <label>Cloth season</label>
+        <input type="text" id="sezon_aparitie" name="sezon_aparitie"><br><br>
+
+        <label>Cloth price</label>
+        <input type="text" id="price" name="price"><br><br>
+
+        <button class="upDt" href="index.html" v-on:click="addHaina()">Add</button>
+        
+    </div>
+    <script src="src/add.js"></script>
+   
+</body>
+
+</html>

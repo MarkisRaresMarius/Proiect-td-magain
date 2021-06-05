@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <title>Users manager</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/vue-material.css" />
+    <link rel="stylesheet" href="styles/haineData.css" />
+
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/vue-material.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+    <script type="text/javascript" src="src/customers-service.js"></script>
+</head>
+
+<body>
+    <div id="app">
+
+        <a name="top"></a>
+
+        <!-- Navigation Bar -->
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <a class="nav-item nav-link text-white" :href="'add.html'"> Adaugare Haina Noua </a>
+            </div>
+        </div>
+        <nav class="navbar sticky-top navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" :href="'index.html'">
+                <img src="storefront.ico" width="30" height="30" class="d-inline-block align-top" alt=""> Magazin Online Haine
+            </a>
+        </nav>
+
+        <div class="title">Lista cu Haine</div>
+
+        <p style="text-align: center" v-if="haine.length == 0">NU sunt haine introduse!!</p>
+
+        <ul class="user-list"  v-if="haine.length > 0">
+            <li>
+                <div class="">
+                    <div class="user-name">Name</div>
+                    <div class="user-price">Price</div>
+                </div>
+            </li>
+
+            <li v-for="haina in haine">
+                <div >
+                    <a :href="'details.html?id='+haina.id">{{ haina.name }}</a>
+                    <span class=""><i>{{ haina.price }}</i></span>
+                    <button v-on:click="deleteHaina(haina.id)">Delete</button>
+                    <a :href="'update.html?id='+haina.id" target="_self">Update</a>
+                </div>
+            </li>
+        </ul>
+        <a :href="'add.html'">ADD A NEW PAIR OF HAINE</a>
+    </div>
+    <script src="src/app.js"></script>
+</body>
+
+</html>

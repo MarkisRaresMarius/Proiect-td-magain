@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    margin: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-family: 'Arial Black';
+}
+
+.navbar-brand:hover {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: crimson !important;
+    box-sizing: border-box;
+    border-style: dashed;
+    border-color: crimson;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-decoration: none !important;
+}
+
+html {
+
+    background-color: black;
+}
+
+#update {
+    background-color: black;
+    margin-bottom: 0;
+}
+
+#details {
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: black;
+    font-size: smaller;
+}
+
+.title {
+    padding-top: 5%;
+    background-color: black;
+    padding-bottom: 5%;
+    color: crimson;
+    font-size: 20px;
+    text-align: center;
+}
+
+.title:hover {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+label {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+div {
+    background-color: black;
+}
+
+input {
+    width: 95%;
+    height: 33px;
+    float: right;
+    background-color: black;
+    color: white;
+    display: inline-block !important;
+}
+
+.upDt {
+    background-color: black;
+    box-sizing: border-box;
+    border-style: dashed;
+    border-color: crimson;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+    color: white;
+    font-size: 20px;
+    margin-left: 20%;
+    font-family: 'Arial Black';
+}
+
+.upDt:hover {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: crimson;
+    text-decoration: none !important;
+}
+
+#addH {
+    background-color: black;
+    margin-bottom: 0;
+}

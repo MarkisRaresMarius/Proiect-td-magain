@@ -1,0 +1,120 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-family: 'Arial Black';
+}
+
+.navbar-brand:hover {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: crimson !important;
+    box-sizing: border-box;
+    border-style: dashed;
+    border-color: crimson;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-decoration: none !important;
+}
+
+#page {
+    background-color: black;
+    margin-bottom: 0;
+}
+
+#details {
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: black;
+    font-size: smaller;
+}
+
+.title {
+    padding-top: 5%;
+    background-color: black;
+    padding-bottom: 5%;
+    color: crimson;
+    font-size: 20px;
+    text-align: center;
+}
+
+.title:hover {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.sub-t {
+    padding-top: 5%;
+    background-color: black;
+    padding-bottom: 1%;
+    color: crimson;
+    font-size: 20px;
+}
+
+.upDt {
+    background-color: black;
+    box-sizing: border-box;
+    border-style: dashed;
+    border-color: crimson;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Arial Black';
+}
+
+.upDt:hover {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: crimson;
+    text-decoration: none !important;
+}
+
+
+.table, th, td {
+    text-align: center;
+    border: 1px solid red;
+    background-color: papayawhip;
+    font-family: 'Arial Black';
+    text-decoration-color: ghostwhite;
+    border-color: crimson;
+    font-size: 20px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.col {
+    display: table-column;
+}
+
+.label {
+    padding: 20px;
+    flex: 1;
+    background-color: darkblue;
+    font-size: 25px;
+    font-family: 'Arial Black';
+}
+
+.value {
+    padding: 20px;
+    background-color: navy;
+    flex: 1;
+    font-size: 25px;
+    font-family: 'Arial Black';
+}
+
+h1 {
+    font-family: 'Arial Black';
+}
